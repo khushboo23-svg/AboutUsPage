@@ -54,24 +54,24 @@
         <div class="container">
             <div class="row">
             <div class="col-md-6 forms">
-                <form class="p-3">
+                <form class="p-3" action="aboutInsert.php" method="POST">
                     <h3 class="text-center">Contact</h3>
                     <hr class="mb-5">
                     <div class="row justify-content-center">
                         <div class="col-md-10 m-2">                           
-                            <input class="inp w-100 p-3" type="text" placeholder="First name"/>
+                            <input class="inp w-100 p-3" type="text" placeholder="First name" name="first_name"/>
                         </div>
                         <div class="col-md-10 m-2">                           
-                            <input class="inp w-100 p-3" type="text" placeholder="Last name"/>
+                            <input class="inp w-100 p-3" type="text" placeholder="Last name" name="last_name"/>
                         </div>
                         <div class="col-md-10 m-2">                           
-                            <input class="inp w-100 p-3" type="email" placeholder="Email id"/>
+                            <input class="inp w-100 p-3" type="email" placeholder="Email id" name="email_id"/>
                         </div>
                         <div class="col-md-10 m-2">                                                    
-                            <textarea name="" id="" cols="30" rows="5" class="inp w-100 p-3" placeholder="Message"></textarea>
+                            <textarea name="message" id="" cols="30" rows="5" class="inp w-100 p-3" placeholder="Message"></textarea>
                         </div>
                         <div class="col-md-10 m-2 text-center">
-                            <button class="btn btn-success w-50">Send</button>
+                            <button class="btn btn-success w-50" name="submit" type="submit">Send</button>
                         </div>                      
                     </div>                  
                 </form>               
